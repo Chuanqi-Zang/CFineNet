@@ -2,7 +2,6 @@
 
 Coarse-to-Fine Network (CFineNet) is proposed for pixel-level video prediction task. 
 
-
 More information and models are coming soon!
 
 ### Table of Contents
@@ -15,6 +14,8 @@ More information and models are coming soon!
 
 ### Introduction
 Video prediction is the task of predicting future video frames conditioned on a few observed video frames.
+![Image text](https://github.com/Chuanqi-Zang/CFineNet/blob/master/git_img/preview.png)
+Three networks for video prediction. When we predict the next frame based on the previous frame, it is difficult to predict the accurate motion state, but no matter what the state is, we can predict its appearance according to the predicted motion state. The direct prediction network confuses the ambiguous motion prediction and the exact appearance prediction, directly generating future frames. The residual decoupling network models the motion and appearance of the frame separately. In our proposed cascaded decoupling network, we first predict the motion state and then adjust the appearance of the object according to its motion state.
 
 ### Requirements
 - Ubuntu 18.04.3 LTS
